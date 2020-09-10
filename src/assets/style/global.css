@@ -1,0 +1,298 @@
+/*** 全局去除滚动条 ****/
+*::-webkit-scrollbar{
+  display: none !important;
+}
+button,input,textarea{
+  outline: none;
+}
+/* \ flex布局 */
+.flexBox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* // 改变主轴方向 */
+.flexColumn{
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+}
+/* // 两端对齐 */
+.flexBetween{
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+}
+/* // 垂直居中 */
+.flexAlign{
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+/* // 左对齐 */
+.flexLeft {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: justify;
+  justify-content: flex-start;
+
+}
+.flexRight {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: justify;
+  justify-content: flex-end;
+
+}
+/* // 水平居中 */
+.flexCenter {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.flexMiddle{
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.flexWrap{
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap:wrap;
+}
+/* padding=20 */
+.hoge-padding{
+  padding: 20px;
+}
+.hoge-white{
+  background: #fff;
+}
+.hoge-font-blue{
+  color: #0091FF;
+}
+.hoge-font-primary{
+  color: #333333;
+}
+.mxu-headings{
+  font-size: 14px;
+  color: #333333;
+  line-height: 14px;
+  margin-bottom: 20px;
+  font-family: PingFangSC-Medium;
+}
+.hoge-lf{
+  float: left;
+}
+.hoge-rf{
+  float: right;
+}
+.hoge-clear{
+  clear: both;
+}
+/* // 预览 */
+.typeface-form_yulan{
+  display: inline-block;
+  width: 13px;
+  height: 10px;
+  /* background: url(../../assets/image/workBench/icon_yulan.png) no-repeat; */
+  margin-right: 8px;
+}
+.typeface-form_pinglun{
+  display: inline-block;
+  width: 13px;
+  height: 11px;
+  /* background: url(../../assets/image/workBench/icon_pinglun.png) no-repeat; */
+  margin-right: 8px;
+}
+/** 字体*/
+i.fa{
+  color: #bbb;
+}
+i.fa:hover{
+  color: #409EFF !important;
+}
+.hoge-error{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: #a7bdcd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.hoge-error div p{
+  border: none !important;
+  margin-bottom: 0!important;
+  font-size: 14px!important;
+  margin-top: 8px!important;
+}
+.nodata-img{
+  display: inline-block;
+  background-image: url(../image/img_nothing.png);
+  width: 200px;
+  height: 165px;
+}
+.dwonoadIcon,.praiseIcon,.collectionIcon,.readersIcon,.photoNumIcon{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+.dwonoadIcon{
+  background: url(../image/homePage/hover_download@1x.png) no-repeat;
+}
+.photoNumIcon{
+  height: 14px;
+  line-height: 18px;
+  background: url(../image/userInfo/photo_num.png) no-repeat;
+}
+.collectionIcon{
+  background: url(../image/homePage/hover_collect@1x.png) no-repeat;
+}
+.readersIcon{
+  background: url(../image/homePage/hover_view@1x.png) no-repeat;
+}
+.praiseIcon{
+  background: url(../image/homePage/hover_praise@1x.png) no-repeat;
+}
+.commentIcon{
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url(../image/homePage/hover_collected.png) no-repeat;
+}
+.womenIcon{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url(../image/personal/sex_girl.png) no-repeat;
+}
+.manIcon{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url(../image/personal/sex_boy.png) no-repeat;
+}
+.idCardRenxiang{
+  width: 60px;
+  height: 32px;
+  display: inline-block;
+  background: url(../image/signing/icon_qianyue_renxiang.png) no-repeat;
+}
+.idCardGuohui{
+  width: 30px;
+  height: 32px;
+  display: inline-block;
+  background: url(../image/signing/icon_qianyue_guohui.png) no-repeat;
+}
+.signingProduct{
+  width: 30px;
+  height: 32px;
+  display: inline-block;
+  background: url(../image/userInfo/icon_master_work.png) no-repeat;
+}
+.addIcon{
+  background: url(../image/icon_add_pic.png) no-repeat;
+  background-size: contain;
+  width: 56px;
+  height: 56px;
+  display: inline-block;
+}
+.linkIcon{
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background: url(../image/signing/icon_qianyue_int.png) no-repeat;
+  background-size: contain;
+  line-height: 14px;
+  margin-right: 5px;
+}
+.timeIcon{
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background: url(../image/signing/icon_qianyue_time.png) no-repeat;
+  background-size: contain;
+  line-height: 14px;
+  margin-right: 5px;
+}
+.pwdIcon{
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background: url(../image/login/pwd.png) no-repeat;
+  background-size: contain;
+  line-height: 22px;
+  margin-right: 5px;
+}
+.usernameIcon{
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background: url(../image/login/name.png) no-repeat;
+  background-size: contain;
+  line-height: 22px;
+  margin-right: 5px;
+}
+.openEye{
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background: url(../image/eye.png) no-repeat;
+  background-size: contain;
+  line-height: 22px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.closeEye{
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background: url(../image/eye2.png) no-repeat;
+  background-size: contain;
+  line-height: 22px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.phoneIcon{
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background: url(../image/login/phone.png) no-repeat;
+  background-size: contain;
+  line-height: 22px;
+  margin-right: 5px;
+}
+.codeIcon{
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background: url(../image/login/code.png) no-repeat;
+  background-size: contain;
+  line-height: 22px;
+  margin-right: 5px;
+}
+.searchIcon{
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background: url(../image/search.png) no-repeat;
+  background-size: contain;
+  line-height: 14px;
+  margin-right: 5px;
+}
